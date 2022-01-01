@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function Home(){
     return(
         <>
-            <BrowserRouter>
+           <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/verification" element={<Verify />} />
